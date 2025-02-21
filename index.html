@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting DApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Blockchain Voting System</h1>
+    <div>
+        <label for="candidateId">Enter Candidate ID to Vote:</label>
+        <input type="number" id="candidateId" min="1">
+        <button onclick="vote()">Vote</button>
+    </div>
+    <div>
+        <label for="voteCountId">Enter Candidate ID to Get Votes:</label>
+        <input type="number" id="voteCountId" min="1">
+        <button onclick="getVoteCount()">Get Vote Count</button>
+        <p id="voteResult"></p>
+    </div>
+</body>
+</html>
